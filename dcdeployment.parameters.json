@@ -9,7 +9,7 @@
       "value": "GEN-PASSWORD"
     },
     "domainName": {
-      "value": "corp.mydomain.com"
+      "value": "dglab.local"
     },
     "dnsPrefix": {
       "value": "GEN-UNIQUE"

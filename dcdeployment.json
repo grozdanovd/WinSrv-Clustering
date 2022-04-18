@@ -39,8 +39,7 @@
                 "Standard_D2s_v4",
                 "Standard_F2s_v2",
                 "Standard_F4s_v2"
-            ]
-        },
+            ],
             "metadata": {
                 "description": "Size of the VM for the controller"
             }
@@ -128,7 +127,7 @@
             "metadata": {
                 "description": "Availability set name."
             }
-        },
+        }
     },
     "resources": [
         {
@@ -159,7 +158,7 @@
         },
         {
             "type": "Microsoft.Resources/deployments",
-            "apiVersion": "2018-11-01",
+            "apiVersion": "2019-03-01",
             "name": "VNet",
             "properties": {
                 "mode": "Incremental",
@@ -192,7 +191,7 @@
             "name": "[parameters('networkInterfaceName')]",
             "location": "[parameters('location')]",
             "dependsOn": [
-                "VNet",
+                "VNet"
             ],
             "properties": {
                 "ipConfigurations": [
@@ -203,7 +202,7 @@
                             "privateIPAddress": "[parameters('privateIPAddress')]",
                             "subnet": {
                                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'), parameters('subnetName'))]"
-                            },
+                            }
                         }
                     }
                 ]
@@ -302,7 +301,7 @@
         },
         {
             "type": "Microsoft.Resources/deployments",
-            "apiVersion": "2018-11-01",
+            "apiVersion": "2019-03-01",
             "name": "UpdateVNetDNS",
             "dependsOn": [
                 "CreateADForest"
