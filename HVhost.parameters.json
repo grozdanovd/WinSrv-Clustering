@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "extensions_InstallWindowsFeatures_modulesUrl": {
+            "value": null
+        },
+        "extensions_InstallWindowsFeatures_configurationFunction": {
+            "value": null
+        },
+        "virtualMachines_HVHOST_name": {
+            "value": null
+        },
+        "routeTables_Azure_VMsUDR_name": {
+            "value": null
+        },
+        "publicIPAddresses_HVHOSTPIP_name": {
+            "value": null
+        },
+        "networkInterfaces_HVHOSTNIC1_name": {
+            "value": null
+        },
+        "networkInterfaces_HVHOSTNIC2_name": {
+            "value": null
+        },
+        "networkSecurityGroups_NATNSG_name": {
+            "value": null
+        },
+        "virtualNetworks_VirtualNetwork_name": {
+            "value": null
+        },
+        "networkSecurityGroups_GhostedNSG_name": {
+            "value": null
+        },
+        "networkSecurityGroups_Azure_VMsNSG_name": {
+            "value": null
+        },
+        "networkSecurityGroups_Hyper_V_LANNSG_name": {
+            "value": null
+        }
+    }
+}
