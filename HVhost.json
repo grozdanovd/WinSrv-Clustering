@@ -176,9 +176,9 @@
                 "typeHandlerVersion": "1.9",
                 "settings": {
                     "fileUris": [
-                        "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/demos/nested-vms-in-virtual-network/hvhostsetup.ps1"
+                        "https://raw.githubusercontent.com/grozdanovd/WinSrv-Clustering/main/DSC/HyperVhostsetup.ps1"
                     ],
-                    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File HVHostSetup.ps1 -NIC1IPAddress 10.0.0.4 -NIC2IPAddress 10.0.1.4 -GhostedSubnetPrefix 10.0.2.0/24 -VirtualNetworkPrefix 10.0.0.0/22"
+                    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File HyperVhosthetup.ps1 -NIC1IPAddress 10.0.0.4 -NIC2IPAddress 10.0.1.4 -GhostedSubnetPrefix 10.0.2.0/24 -VirtualNetworkPrefix 10.0.0.0/22"
                 },
                 "protectedSettings": {}
             }
